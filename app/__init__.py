@@ -9,6 +9,7 @@ app.register_blueprint(api_bp)
 from .config import Config
 
 
+@app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def index_client(path=None):
     return send_file(os.path.join(current_app.config['DIST_DIR'], 'index.html'))
