@@ -1,13 +1,6 @@
 import os
 from flask import Flask, current_app, send_file
 
-import nltk
-
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('cmudict')
-nltk.download('stopwords')
-
 from .api import api_bp
 
 app = Flask(__name__, static_folder='../dist/static')
