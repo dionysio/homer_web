@@ -4,7 +4,7 @@ module.exports = {
   devServer: {
     proxy: {
       '/api*': {
-        target: 'https://goodwriter.herokuapp.com/'
+        target: 'https://goodwriter.dionysio.com/'
       }
     }
   }
