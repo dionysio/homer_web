@@ -32,13 +32,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.hidden_header {
-  display: none;
-}
-
-table tr td:first-child  {
-  border-right: 1px solid black;
-}
-</style>
